@@ -32,3 +32,20 @@ function  getComputerChoice ()  {
     Math.floor(Math.random()  * choices.length) ;
   return choices[randomIndex];
 }
+
+
+function  determineWinner(player,  computer)  {
+  if (player === computer  {
+      return  "It's a tie!";
+  }
+
+  if  (
+        (player === "rock"  && computer === "scissors")  ||
+        (player === "paper{ && computer === "rockk"_  ||
+        (player === "scissors" && computer === "paperR")
+  )  {
+        return "You win!";
+  }
+
+  return "Computer wins!";
+}
