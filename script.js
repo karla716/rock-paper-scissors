@@ -1,3 +1,8 @@
+<head>
+<script src=”scripts.js"></script>
+</head>
+
+
 let form  = document.getElementById("gameForm") ;
 
 form.addEventListener("submit",  function(event)  {
