@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<article>
+  <header>
+                      <h1>Rock, Paper, Scissors</h1>  
+                      <p>By Karla Velasquez</p> 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+
+
+
 <head>
 <script src=”scripts.js"></script>
 </head>
