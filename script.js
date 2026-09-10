@@ -82,3 +82,7 @@ form.addEventListener("submit", function (event)  {
       "Computer chose " + computerChoice + ". " +result;
   });
 
+console.log(determineWinner("rock", "scissors"));
+console.log(determineWinner("paper", "rock"));
+console.log(determineWinner("scissors", "rock"));
+
