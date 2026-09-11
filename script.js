@@ -83,6 +83,87 @@ form.addEventListener("submit", function (event)  {
   });
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: lightblue;
+            padding-top: 50px;
+        }
+
+        .game {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #error {
+            color: red;
+            font-weight: bold;
+        }
+
+        #newGame {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>Rock Paper Scissors</h1>
+
+        <p>First player to 3 wins!</p>
+
+        <h2>
+            Player: <span id="playerScore">0</span>
+            -
+            Computer: <span id="computerScore">0</span>
+        </h2>
+
+        <p id="error"></p>
+
+        <h3>Choose one:</h3>
+
+        <button onclick="playGame('rock')">Rock</button>
+
+        <button onclick="playGame('paper')">Paper</button>
+
+        <button onclick="playGame('scissors')">Scissors</button>
+
+        <div id="result">
+            <p>Make your choice to start!</p>
+        </div>
+
+        <button id="newGame" onclick="startNewGame()">
+            New Game
+        </button>
+
+    </div>
+
+
+    <script>
+
         // Keep track of the scores
         let playerScore = 0;
         let computerScore = 0;
@@ -211,7 +292,5 @@ form.addEventListener("submit", function (event)  {
 
 </body>
 </html>
-console.log(determineWinner("rock", "scissors"));
-console.log(determineWinner("paper", "rock"));
-console.log(determineWinner("scissors", "rock"));
+
 
